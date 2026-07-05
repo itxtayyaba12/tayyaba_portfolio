@@ -331,7 +331,50 @@
 
         </div>
 
+        <!-- Project 4 -->
+
+<div class="project-card">
+
+    <div class="project-inner">
+
+        <!-- Front -->
+
+        <div class="project-front">
+
+            <h3>📝 Notes App</h3>
+
+        </div>
+
+        <!-- Back -->
+
+        <div class="project-back">
+
+            <p>
+                A responsive Notes Application built using HTML, CSS and JavaScript.
+                Features include Add, Edit, Delete, Search, Categories and Local Storage.
+            </p>
+
+            <div class="project-links">
+
+                <a href="https://itxtayyaba12.github.io/NotesApp/" target="_blank">
+                    Live Demo
+                </a>
+
+                <a href="https://github.com/itxtayyaba12/NotesApp" target="_blank">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
+
+</div>
+
+    </div>
+
+    
 
 </section>
 
@@ -385,44 +428,7 @@
 </footer>
 
 
-<!-- ================= JAVASCRIPT ================= -->
-
-<script>
-
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav a");
-
-window.addEventListener("scroll", () => {
-
-    let current = "";
-
-    sections.forEach(section => {
-
-        const sectionTop = section.offsetTop - 100;
-
-        if(window.scrollY >= sectionTop){
-
-            current = section.getAttribute("id");
-
-        }
-
-    });
-
-    navLinks.forEach(link => {
-
-        link.classList.remove("active");
-
-        if(link.getAttribute("href") === "#" + current){
-
-            link.classList.add("active");
-
-        }
-
-    });
-
-});
-
-</script>
+<script src="script.js"></script>
 
 </body>
 

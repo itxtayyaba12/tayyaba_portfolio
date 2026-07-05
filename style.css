@@ -919,3 +919,36 @@ footer{
     width:260px;
     text-align:center;
 }
+/* Notes App Links */
+
+.project-back{
+    flex-direction:column;
+}
+
+.project-links{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-top:18px;
+    flex-wrap:wrap;
+}
+
+.project-links a{
+    text-decoration:none;
+    color:#fff;
+    background:#5f73e7;
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s ease;
+}
+
+.project-links a:hover{
+    background:#7b4fb8;
+    transform:translateY(-2px);
+}
+
+.project-card.flip .project-inner{
+    transform: rotateY(180deg);
+}
